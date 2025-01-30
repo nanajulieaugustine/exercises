@@ -99,7 +99,6 @@ function handAnimationEnd() {
   } else if (userChoice === "scissors") {
     player1.classList.add("animation_scissors");
   }
-  computerChooses();
   showWinnerScreen();
 }
 
