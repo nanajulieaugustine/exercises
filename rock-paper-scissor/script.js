@@ -1,4 +1,5 @@
 "use strict";
+import { getRandomNumber } from "..utils/utils.js";
 let userChoice;
 let compChoice;
 let winner;
