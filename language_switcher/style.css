@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+.header {
+  background-color: rgb(29, 122, 99);
+  padding: 4rem;
+}
+
+p {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 5rem;
+}
+
+main {
+  margin: 10rem;
+}
+
+.footer {
+  background-color: orange;
+  padding: 4rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 5rem;
+}

@@ -1,0 +1,56 @@
+table {
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(240, 182, 121);
+}
+
+th,
+td {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(255, 250, 232);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+button {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  padding: 0.8rem;
+  background-color: beige;
+  border: 3px solid rgb(235, 194, 153);
+  border-radius: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(53, 52, 52);
+}
+
+button:hover {
+  background-color: white;
+  transition-duration: 0.5s;
+}
