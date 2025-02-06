@@ -13,18 +13,25 @@ const texts = {
     ],
   },
 };
-const locale = "da";
 
 document.querySelector(".danish").addEventListener("click", showDanish);
 
 function showDanish() {
-  document.querySelector("p").textContent = `${locale}`;
-  console.log("hej", locale);
+  texts.da.texts.forEach(({ text, location }) => {
+    const element = document.querySelector(location);
+    if (element) {
+      element.textContent = text;
+    }
+  });
 }
 
 document.querySelector(".german").addEventListener("click", showGerman);
 
 function showGerman() {
-  document.querySelector("p").textContent = `${locale}`;
-  console.log("hej", locale);
+  texts.de.texts.forEach(({ text, location }) => {
+    const element = document.querySelector(location);
+    if (element) {
+      element.textContent = text;
+    }
+  });
 }
