@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+}
+
+[data-theme="light"] {
+  background-color: rgb(245, 243, 220);
+  --header-bg: rgb(222, 208, 188);
+  --footer-bg: rgb(189, 180, 164);
+  --h1-color: rgb(168, 147, 120);
+  --label-color: rgb(101, 101, 101);
+  --select-color: rgb(215, 198, 176);
+  --h2-color: rgb(129, 113, 93);
+}
+
+[data-theme="dark"] {
+  background-color: rgb(40, 39, 39);
+  --header-bg: rgb(101, 104, 126);
+  --footer-bg: rgb(26, 26, 25);
+  --h1-color: rgb(103, 3, 3);
+  --label-color: rgb(0, 0, 0);
+  --select-color: rgb(79, 82, 99);
+  --h2-color: rgb(123, 59, 59);
+  --select-text-color: rgb(217, 214, 214);
+}
+
+[data-theme="hawaii"] {
+  background-color: rgb(105, 173, 63);
+  --header-bg: rgb(217, 177, 17);
+  --footer-bg: rgb(49, 38, 117);
+  --h1-color: rgb(103, 3, 3);
+  --label-color: rgb(0, 0, 0);
+  --select-color: rgb(235, 214, 99);
+  --h2-color: rgb(1, 180, 88);
+  --select-text-color: rgb(22, 21, 21);
+}
+
+header {
+  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+  background-color: var(--header-bg);
+}
+
+footer {
+  padding-top: 8rem;
+  background-color: var(--footer-bg);
+}
+
+main {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+h1 {
+  color: var(--h1-color);
+  margin-left: 2rem;
+  font-size: 8rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+label {
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  color: var(--label-color);
+}
+
+select {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  background-color: var(--select-color);
+  color: var(--select-text-color);
+  border-radius: 15px;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--h2-color);
+  margin-left: 2rem;
+}
+
+p {
+  margin-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
