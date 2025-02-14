@@ -1,10 +1,14 @@
-const select = document.querySelector("#select");
-const body = document.body;
+const theStoredTheme = localStorage.getItem("storedTheme");
+console.log("storedTheme", theStoredTheme);
+if (theStoredTheme !== null) {
+  document.querySelector("body").dataset.theme = theStoredTheme;
+  document.querySelector("#select").value = theStoredTheme;
+}
+document.querySelector("#select").addEventListener("change", changeTheme);
 
-select.addEventListener("change", changeTheme);
+function changeTheme(evt) {
+  const chosenTheme = evt.target.value;
 
-function changeTheme() {
-  const selectedTheme = select.value;
-  body.setAttribute("data-theme", selectedTheme);
-  console.log("Theme changed to:", selectedTheme);
+  document.querySelector("body").dataset.theme = chosenTheme;
+  localStorage.setItem("storedTheme", chosenTheme);
 }

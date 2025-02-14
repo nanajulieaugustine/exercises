@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(151, 5, 5);
+}
+
+#ze_button {
+  cursor: pointer;
+  color: black;
+  width: 10rem;
+  height: 2rem;
+  background-color: lightgray;
+  border: none;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, lightgray, white);
+  background-repeat: no-repeat;
+}
+
+#ze_button.clicked {
+  background-image: none;
+  background-color: lightgray;
+  animation: mymove 1s infinite;
+}
+
+#ze_button.mouseover {
+  background-image: none;
+  background-color: white;
+}
+
+@keyframes mymove {
+  100% {
+    opacity: 0;
+  }
+}
